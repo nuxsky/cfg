@@ -1,2 +1,2 @@
-# cfg
-config files
+# config files
+by nuxsky
