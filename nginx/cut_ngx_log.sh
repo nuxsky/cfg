@@ -12,4 +12,4 @@ do
 done
 
 $NGXBIN/sbin/nginx -s reload
-find $NGXLOG/ -mtime -1 -type f -exec mv {} /tmp \;
+find $NGXLOG/ -mtime +30 -type f -exec mv {} /tmp \;
