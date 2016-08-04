@@ -1,12 +1,12 @@
 #!/bin/sh
-# v1.0.0
+# v1.0.1
 
 DATE=`date +%Y%m%d`
 NGXBIN=/usr/local/nginx
 NGXLOG=/data/logs/nginx
 
 [ -d $NGXLOG ] && cd $NGXLOG || exit 1
-for LOGNAME in `ls $NGXLOG | grep "[^0-9_].log"`
+for LOGNAME in `ls $NGXLOG | grep -v "[^0-9].log"`
 do
   mv $LOGNAME ${LOGNAME%%.*}_$DATE.log
 done
