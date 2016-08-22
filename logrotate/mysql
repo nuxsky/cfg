@@ -1,0 +1,11 @@
+/data/logs/mysql/error.log 
+/data/logs/mysql/slow-query.log {
+daily
+dateext
+create
+copytruncate
+notifempty
+rotate 60
+missingok
+sharedscripts
+}
