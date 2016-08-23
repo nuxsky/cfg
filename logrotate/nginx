@@ -1,4 +1,4 @@
-/data/logs/nginx/error-log
+/data/logs/nginx/error_log
 /data/logs/nginx/*.log {
 daily
 dateext
