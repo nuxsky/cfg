@@ -1,4 +1,5 @@
-/usr/local/nginx/logs/*.log {
+/data/logs/nginx/error-log
+/data/logs/nginx/*.log {
 daily
 dateext
 create

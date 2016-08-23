@@ -7,6 +7,6 @@ rotate 60
 missingok
 sharedscripts
 postrotate
-/bin/kill -HUP `cat /usr/local/php/var/run/php-fpm.pid `
+/bin/kill -HUP `cat /data/logs/php/php-fpm.pid`
 endscript
 }
